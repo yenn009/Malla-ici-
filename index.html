@@ -23,7 +23,7 @@
     }
 
     .semestre {
-      min-width: 200px;
+      min-width: 220px;
       background-color: #a38abf;
       border-radius: 10px;
       padding: 10px;
@@ -45,6 +45,12 @@
       font-size: 0.9em;
     }
 
+    .materia span {
+      display: block;
+      font-size: 0.8em;
+      margin-top: 4px;
+    }
+
     .general { background-color: #b7d9f7; color: #000; }
     .especialidad { background-color: #f7c6d9; color: #000; }
     .optativa { background-color: #a7e9ed; color: #000; }
@@ -54,16 +60,6 @@
       text-decoration: line-through;
       opacity: 0.6;
     }
-
-    #info {
-      margin-top: 20px;
-      padding: 10px;
-      border: 1px solid #aaa;
-      border-radius: 8px;
-      display: none;
-      background-color: #f5f5f5;
-      color: #000;
-    }
   </style>
 </head>
 <body>
@@ -71,21 +67,26 @@
 <h1>Malla Curricular - Ing. Civil Industrial UACh</h1>
 
 <div class="semestres">
-  <!-- Tus semestres y materias aquí (idéntico al código anterior) -->
-  <!-- Lo puedes copiar desde la versión anterior y pegar aquí -->
-</div>
+  <!-- SEMESTRE I -->
+  <div class="semestre">
+    <h3>Semestre I</h3>
+    <div class="materia general" data-creditos="2" data-tipo="General">Comprensión del Inglés<span>Créditos: 2 | Tipo: General</span></div>
+    <div class="materia general" data-creditos="4" data-tipo="General">Geometría<span>Créditos: 4 | Tipo: General</span></div>
+    <div class="materia general" data-creditos="5" data-tipo="General">Álgebra e Introducción al Cálculo<span>Créditos: 5 | Tipo: General</span></div>
+    <div class="materia general" data-creditos="3" data-tipo="General">Comunicación en Español<span>Créditos: 3 | Tipo: General</span></div>
+    <div class="materia general" data-creditos="4" data-tipo="General">Química General<span>Créditos: 4 | Tipo: General</span></div>
+    <div class="materia general" data-creditos="1" data-tipo="General">Educación Física y Salud<span>Créditos: 1 | Tipo: General</span></div>
+    <div class="materia especialidad" data-creditos="2" data-tipo="Especialidad">Introducción a la Ing. Industrial<span>Créditos: 2 | Tipo: Especialidad</span></div>
+  </div>
 
-<div id="info"></div>
+  <!-- Continúa agregando los semestres II al XI en el mismo formato... -->
+</div>
 
 <script>
   const materias = document.querySelectorAll('.materia');
-  const info = document.getElementById('info');
-
-  // Cargar estado guardado
   const completadas = JSON.parse(localStorage.getItem('materiasCompletadas')) || [];
 
   materias.forEach((materia, index) => {
-    // Restaurar materias completadas
     if (completadas.includes(index)) {
       materia.classList.add('completada');
     }
@@ -93,23 +94,11 @@
     materia.addEventListener('click', () => {
       materia.classList.toggle('completada');
 
-      // Guardar estado
       const nuevosCompletados = Array.from(materias)
         .map((m, i) => m.classList.contains('completada') ? i : null)
         .filter(i => i !== null);
+
       localStorage.setItem('materiasCompletadas', JSON.stringify(nuevosCompletados));
-
-      // Mostrar info
-      const nombre = materia.textContent.trim();
-      const creditos = materia.dataset.creditos;
-      const tipo = materia.dataset.tipo;
-
-      info.style.display = 'block';
-      info.innerHTML = `
-        <h3>${nombre}</h3>
-        <p><strong>Créditos:</strong> ${creditos}</p>
-        <p><strong>Tipo de formación:</strong> ${tipo}</p>
-      `;
     });
   });
 </script>
