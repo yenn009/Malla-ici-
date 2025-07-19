@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Malla Curricular - Ing. Civil Industrial UACh</title>
   <style>
     body {
@@ -27,7 +27,7 @@
       background-color: #a38abf;
       border-radius: 10px;
       padding: 10px;
-      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
       color: white;
     }
 
@@ -43,6 +43,7 @@
       border-radius: 6px;
       cursor: pointer;
       font-size: 0.9em;
+      color: black;
     }
 
     .materia span {
@@ -51,10 +52,26 @@
       margin-top: 4px;
     }
 
-    .general { background-color: #b7d9f7; color: #000; }
-    .especialidad { background-color: #f7c6d9; color: #000; }
-    .optativa { background-color: #a7e9ed; color: #000; }
-    .vinculacion, .profesional { background-color: #d5b8ff; color: #000; }
+    .general {
+      background-color: #b7d9f7;
+      color: #000;
+    }
+
+    .especialidad {
+      background-color: #f7c6d9;
+      color: #000;
+    }
+
+    .optativa {
+      background-color: #a7e9ed;
+      color: #000;
+    }
+
+    .vinculacion,
+    .profesional {
+      background-color: #d5b8ff;
+      color: #000;
+    }
 
     .completada {
       text-decoration: line-through;
@@ -63,45 +80,249 @@
   </style>
 </head>
 <body>
+  <h1>Malla Curricular - Ing. Civil Industrial UACh</h1>
 
-<h1>Malla Curricular - Ing. Civil Industrial UACh</h1>
+  <div class="semestres">
+    <!-- SEMESTRE I -->
+    <div class="semestre">
+      <h3>Semestre I</h3>
+      <div class="materia general" data-creditos="2" data-tipo="General">Comprensión del Inglés
+        <span>Créditos: 2 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Geometría
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="5" data-tipo="General">Álgebra e Introducción al Cálculo
+        <span>Créditos: 5 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="3" data-tipo="General">Comunicación en Español
+        <span>Créditos: 3 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Química General
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="1" data-tipo="General">Educación Física y Salud
+        <span>Créditos: 1 | Tipo: General</span>
+      </div>
+      <div class="materia especialidad" data-creditos="2" data-tipo="Especialidad">Introducción a la Ing. Industrial
+        <span>Créditos: 2 | Tipo: Especialidad</span>
+      </div>
+    </div>
 
-<div class="semestres">
-  <!-- SEMESTRE I -->
-  <div class="semestre">
-    <h3>Semestre I</h3>
-    <div class="materia general" data-creditos="2" data-tipo="General">Comprensión del Inglés<span>Créditos: 2 | Tipo: General</span></div>
-    <div class="materia general" data-creditos="4" data-tipo="General">Geometría<span>Créditos: 4 | Tipo: General</span></div>
-    <div class="materia general" data-creditos="5" data-tipo="General">Álgebra e Introducción al Cálculo<span>Créditos: 5 | Tipo: General</span></div>
-    <div class="materia general" data-creditos="3" data-tipo="General">Comunicación en Español<span>Créditos: 3 | Tipo: General</span></div>
-    <div class="materia general" data-creditos="4" data-tipo="General">Química General<span>Créditos: 4 | Tipo: General</span></div>
-    <div class="materia general" data-creditos="1" data-tipo="General">Educación Física y Salud<span>Créditos: 1 | Tipo: General</span></div>
-    <div class="materia especialidad" data-creditos="2" data-tipo="Especialidad">Introducción a la Ing. Industrial<span>Créditos: 2 | Tipo: Especialidad</span></div>
+    <!-- SEMESTRE II -->
+    <div class="semestre">
+      <h3>Semestre II</h3>
+      <div class="materia general" data-creditos="3" data-tipo="General">Comunicación en Inglés
+        <span>Créditos: 3 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Álgebra Lineal
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="5" data-tipo="General">Cálculo en RR de una Variable
+        <span>Créditos: 5 | Tipo: General</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Comunicación Profesional
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="4" data-tipo="Especialidad">Lógica y Programación
+        <span>Créditos: 4 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="4" data-tipo="Especialidad">Química de Procesos
+        <span>Créditos: 4 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Taller de TIC
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE III -->
+    <div class="semestre">
+      <h3>Semestre III</h3>
+      <div class="materia general" data-creditos="5" data-tipo="General">Cálculo en Varias Variables
+        <span>Créditos: 5 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Física Mecánica I
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Estadística y Probabilidades
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Creatividad y Pensamiento Crítico
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Taller de Emprendimiento
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia optativa" data-creditos="3" data-tipo="Optativa">Optativo de Formación General
+        <span>Créditos: 3 | Tipo: Optativa</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE IV -->
+    <div class="semestre">
+      <h3>Semestre IV</h3>
+      <div class="materia general" data-creditos="4" data-tipo="General">Ecuaciones Diferenciales
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Física Mecánica II
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Inferencia Estadística
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Teoría Organizacional
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Taller de Ingeniería
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE V -->
+    <div class="semestre">
+      <h3>Semestre V</h3>
+      <div class="materia general" data-creditos="4" data-tipo="General">Electroelectrónica
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Termodinámica
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia general" data-creditos="4" data-tipo="General">Métodos Numéricos
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Investigación de Operaciones I
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Teoría de Sistemas
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Microeconomía
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE VI -->
+    <div class="semestre">
+      <h3>Semestre VI</h3>
+      <div class="materia general" data-creditos="4" data-tipo="General">Mecánica de Fluidos
+        <span>Créditos: 4 | Tipo: General</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Contabilidad y Costos
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Macroeconomía
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Investigación de Operaciones II
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Simulación de Procesos
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE VII -->
+    <div class="semestre">
+      <h3>Semestre VII</h3>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Sistemas de Información
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión Táctica de Operaciones
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Estudio del Trabajo
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión de Recursos Humanos
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión de Calidad y Medio Ambiente
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE VIII -->
+    <div class="semestre">
+      <h3>Semestre VIII</h3>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Comportamiento Organizacional
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión Estratégica de Operaciones
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Ingeniería Económica
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Procesos Industriales
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE IX -->
+    <div class="semestre">
+      <h3>Semestre IX</h3>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión Estratégica
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión Comercial y Marketing
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Finanzas
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia profesional" data-creditos="6" data-tipo="Profesional">Práctica Profesional
+        <span>Créditos: 6 | Tipo: Profesional</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE X -->
+    <div class="semestre">
+      <h3>Semestre X</h3>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión de la Cadena de Abastecimiento
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Gestión de Proyectos
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Formulación y Evaluación de Proyectos
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia profesional" data-creditos="3" data-tipo="Profesional">Anteproyecto de Seminario
+        <span>Créditos: 3 | Tipo: Profesional</span>
+      </div>
+    </div>
+
+    <!-- SEMESTRE XI -->
+    <div class="semestre">
+      <h3>Semestre XI</h3>
+      <div class="materia especialidad" data-creditos="3" data-tipo="Especialidad">Formulación y Evaluación de Modelos de Negocio e Innovación
+        <span>Créditos: 3 | Tipo: Especialidad</span>
+      </div>
+      <div class="materia profesional" data-creditos="6" data-tipo="Profesional">Seminario de Titulación
+        <span>Créditos: 6 | Tipo: Profesional</span>
+      </div>
+    </div>
   </div>
 
-  <!-- Continúa agregando los semestres II al XI en el mismo formato... -->
-</div>
+  <script>
+    const materias = document.querySelectorAll('.materia');
+    const completadas = JSON.parse(localStorage.getItem('materiasCompletadas')) || [];
 
-<script>
-  const materias = document.querySelectorAll('.materia');
-  const completadas = JSON.parse(localStorage.getItem('materiasCompletadas')) || [];
+    materias.forEach((materia, index) => {
+      if (completadas.includes(index)) {
+        materia.classList.add('completada');
+      }
 
-  materias.forEach((materia, index) => {
-    if (completadas.includes(index)) {
-      materia.classList.add('completada');
-    }
+      materia.addEventListener('click', () => {
+        materia.classList.toggle('completada');
 
-    materia.addEventListener('click', () => {
-      materia.classList.toggle('completada');
+        const nuevosCompletados = Array.from(materias)
+          .map((m, i) => (m.classList.contains('completada') ? i : null))
+          .filter(i => i !== null);
 
-      const nuevosCompletados = Array.from(materias)
-        .map((m, i) => m.classList.contains('completada') ? i : null)
-        .filter(i => i !== null);
-
-      localStorage.setItem('materiasCompletadas', JSON.stringify(nuevosCompletados));
+        localStorage.setItem('materiasCompletadas', JSON.stringify(nuevosCompletados));
+      });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
